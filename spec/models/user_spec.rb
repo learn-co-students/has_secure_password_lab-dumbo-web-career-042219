@@ -29,6 +29,7 @@ RSpec.describe User, type: :model do
     user = User.new
     user.password = 'foo'
     user.password_confirmation = 'fo0'
+    # debugger
     expect(user.valid?).to be false
   end
 
